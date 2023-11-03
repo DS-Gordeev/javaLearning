@@ -1,6 +1,8 @@
 package Comparator;
-// В классе Person не импементируем никакой интерфейс
-public class Person {
+
+// В классе Person имплементируем Comparable, по нему будем сортировать как natural order
+// если потребуется другая сортировка, то тут же будем использовать Comparator
+public class Person implements Comparable<Person> {
     final Integer id;
     private final String name;
     private final String surname;
@@ -23,4 +25,11 @@ public class Person {
                 '}';
     }
 
+    @Override
+    public int compareTo(Person otherPerson) {
+        // Сортируем по id
+
+        return this.id.compareTo(otherPerson.id);
+
+    }
 }

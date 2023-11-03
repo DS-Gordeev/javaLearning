@@ -14,14 +14,9 @@ public class PersonComparator implements Comparator<Person> {
         else if(person1.id < person2.id) return -1;
         else return 0; */
 
-        // Сортируем по возрастанию по id, если id равны, то сортируем по age
-        int result = person1.id.compareTo(person2.id);
+        // В Comparator сортируем по age
 
-        if(result == 0) {
-            result = person1.age.compareTo(person2.age);
-        }
-
-        return result;
+        return person1.age.compareTo(person2.age);
 
     }
 }

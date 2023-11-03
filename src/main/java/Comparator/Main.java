@@ -7,7 +7,7 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) {
 
-        // Сортируем список при помощи метода .sort класса Collections
+        // Сортируем список при помощи метода .sort класса Collections в natural order
         List<String> namesList = new ArrayList<>();
 
         namesList.add("Vikror");
@@ -28,8 +28,13 @@ public class Main {
 
         System.out.println(personsList);
 
-        // Для сравнения передаем в sort список и объекта класса-компаратора по которому будем сортировать
+        // Это Comparator
+        // Для сравнения передаем в sort список и объекта класса-компаратора по которому будем сортировать. по age
         Collections.sort(personsList, new PersonComparator());
+
+        // Это Comparable
+        // Для сравнения передаем в sort только список. Работает только Comparable. по id
+        Collections.sort(personsList);
         System.out.println(personsList);
 
 
