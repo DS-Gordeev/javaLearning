@@ -1,4 +1,4 @@
-package Comparable;
+package ComparableAndGenerics.Comparable;
 // Интерфейс Comparable в котором содержится только один метод compareTo который нужно реализовать
 public class Person implements Comparable<Person> {
     private final Integer id;

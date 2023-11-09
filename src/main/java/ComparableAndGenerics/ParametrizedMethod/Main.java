@@ -1,4 +1,4 @@
-package ParametrizedMethod;
+package ComparableAndGenerics.ParametrizedMethod;
 
 import java.util.ArrayList;
 

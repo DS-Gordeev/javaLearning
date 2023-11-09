@@ -1,4 +1,4 @@
-package ParametrizedClass;
+package ComparableAndGenerics.ParametrizedClass;
 
 // Класс ParamClassSubtype сможет принимать только тип T extends от Number (Integer, Float, Double и т.д.)
 public class ParamClassSubtype<T extends Number> {

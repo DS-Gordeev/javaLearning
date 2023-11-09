@@ -1,4 +1,4 @@
-package Comparator;
+package ComparableAndGenerics.Comparator;
 
 // В классе Person имплементируем Comparable, по нему будем сортировать как natural order
 // если потребуется другая сортировка, то тут же будем использовать Comparator
