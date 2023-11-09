@@ -1,4 +1,4 @@
-package ParametrizedClass;
+package ComparableAndGenerics.ParametrizedClass;
 
 // Параметризированный класс принимает любой тип данных
 public class ParamClass <T> {

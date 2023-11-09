@@ -1,4 +1,4 @@
-package ParametrizedClass;
+package ComparableAndGenerics.ParametrizedClass;
 
 public class Main {
     public static void main(String[] args) {
