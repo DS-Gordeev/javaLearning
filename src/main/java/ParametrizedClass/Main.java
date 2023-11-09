@@ -8,5 +8,10 @@ public class Main {
         ParamClass<Integer> iAmInteger = new ParamClass<>(737);
         System.out.println(iAmInteger);
 
+        // Т.к. public class ParamClassSubtype<T extends Number>, то тип данных может быть только потомки Number
+        ParamClassSubtype<Double> iAmAnyNumber = new ParamClassSubtype<>(3.14);
+        System.out.println(iAmAnyNumber);
+
+
     }
 }
