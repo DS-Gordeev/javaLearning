@@ -3,10 +3,11 @@ package Collection.ArrayList;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Main {
+public class MainMethods {
     public static void main(String[] args) {
+        //СОЗДАНеЕ ArrayList
+        System.out.println("\nСОЗДАНеЕ ArrayList:");
 
-        // Способы создания ArrayList
         ArrayList<String> listOfString = new ArrayList<>();
         listOfString.add("Dmitriy");
         listOfString.add("Roman");
@@ -22,12 +23,17 @@ public class Main {
         ArrayList<String> listOfString3 = new ArrayList<>(listOfString);
         System.out.println(listOfString3);
 
-        // Создает неизменяемый список
+        // Создает неизменяемый список. В нем не могут содержаться значения null
         List<Integer> immutableList = List.of(1, 2, 3);
         System.out.println(immutableList);
 
+        // Создает неизменяемый список на основе другой коллекции. В нем не могут содержаться значения null
+        List<String> immutableCopyList = List.copyOf(listOfString);
+        System.out.println(immutableCopyList);
+
+
         //____________________________________________________________________________________
-        System.out.println("МЕТОДЫ ArrayList:");
+        System.out.println("\nМЕТОДЫ ArrayList:");
         //МЕТОДЫ ArrayList
 
         // .add - добавляет элемент в список --> boolean. Можно указать индекс в пределех размера списка
