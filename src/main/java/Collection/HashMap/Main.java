@@ -1,6 +1,7 @@
 package Collection.HashMap;
 
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.Map;
 
 public class Main {
@@ -14,7 +15,7 @@ public class Main {
         myMap.put(3216, "Sergey Lykianov");
         myMap.put(8176, "Fedor Ignatov");
         myMap.put(1000, "Vasilisa Gordeeva");
-        myMap.put(null, null);
+//        myMap.put(null, null);
         System.out.println(myMap);
 
         // .putIfAbsent - добавляет данные в map, если такой ключ отсутствует в map (в успешном случае возвращает null)
@@ -46,7 +47,25 @@ public class Main {
         // .values - возвращает все значений map
         System.out.println(myMap.values());
 
-        // .entrySet -
+        // .entrySet - возвращает множество пар ключ \ значение. Доступ к ним через цикл или итератор
+        // В цикле можно получать, изменять, удалять ключи \ значения.
+        System.out.println(myMap.entrySet());
+
+        //Проход в цикле
+        for (Map.Entry<Integer, String> entry: myMap.entrySet()) {
+            int key = entry.getKey();
+            String value = entry.getValue();
+            System.out.println("The key is: " + key + " | The value is: " + value);
+        }
+
+        //Проход в итератором
+        Iterator<Map.Entry<Integer, String>> iterator = myMap.entrySet().iterator();
+        while (iterator.hasNext()) {
+            Map.Entry<Integer, String> entry = iterator.next();
+            int key = entry.getKey();
+            String value = entry.getValue();
+            System.out.println("The key form iterator is: " + key + " | The value form iterator is: " + value);
+        }
 
     }
 }
