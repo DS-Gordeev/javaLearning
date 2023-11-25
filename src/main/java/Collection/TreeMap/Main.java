@@ -38,14 +38,17 @@ public class Main {
         // .descendingMap() - выводит значение по ключам в обратном порядке (от большего к меньшему)
         System.out.println(students.descendingMap());
 
-        // .tailMap() - выводит значения включительно начиная больше чем указанный ключ (хвост)
+        // .tailMap() - выводит значения "включительно" начиная больше, чем указанный ключ (хвост)
         System.out.println(students.tailMap(6.7));
 
+        // .headMap() - выводит значения "НЕ включительно" начиная меньше, чем указанный ключ (голова)
+        System.out.println(students.headMap(6.7));
 
+        // .lastEntry() - выводит ключ/значение с самым большим ключом (последние значение treeMap)
+        System.out.println(students.lastEntry());
 
-
-
-
+        // .lastEntry() - выводит ключ/значение с самым маленьким ключом (первое значение treeMap)
+        System.out.println(students.firstEntry());
 
     }
     public static class Student {
