@@ -13,7 +13,7 @@ public class Car {
 
     @Override
     public String toString() {
-        return "My car:{" +
+        return "My car: {" +
                 "color='" + color + '\'' +
                 ", doorCount=" + doorCount +
                 ", engine=" + engine +
@@ -22,6 +22,17 @@ public class Car {
 
     // Вложенный static класс
     public static class Engine {
+        int HorsePower;
 
+        public Engine(int horsePower) {
+            HorsePower = horsePower;
+        }
+
+        @Override
+        public String toString() {
+            return "My Engine: {" +
+                    "HorsePower=" + HorsePower +
+                    '}';
+        }
     }
 }
