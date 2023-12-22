@@ -1,4 +1,4 @@
-package Lambdas.ex1;
+package Predicate;
 
 public class Student {
     String Name;

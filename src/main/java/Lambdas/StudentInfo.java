@@ -1,4 +1,4 @@
-package Lambdas.ex1;
+package Lambdas;
 
 import java.util.ArrayList;
 
