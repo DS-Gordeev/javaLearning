@@ -1,6 +1,5 @@
 package Predicate;
 
-import Lambdas.Student;
 import java.util.ArrayList;
 import java.util.function.Predicate;
 
