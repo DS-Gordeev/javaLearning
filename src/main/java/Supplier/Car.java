@@ -24,7 +24,7 @@ public class Car {
                 '}';
     }
 
-    // Интерфейс Supplier поставляет данный, реализуем метод get() который возвращает объект
+    // интерфейс Supplier поставляет данный, реализуем метод get() который возвращает объект
     public static ArrayList<Car> createThreeCars(Supplier<Car> supplier) {
         ArrayList<Car> myCars = new ArrayList<>();
         for(int i=0; i<3; i++) {
