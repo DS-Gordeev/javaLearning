@@ -1,11 +1,11 @@
-package Stream.Main;
+package Stream.Map;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class MainExample {
+public class Map {
     public static void main(String[] args) {
 
         // Stream - это последовательность элементов, которая поддерживает последовательные и параллельные операции
